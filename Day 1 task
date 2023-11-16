@@ -1,0 +1,52 @@
+1. Write a blog on Difference between HTTP1.1 vs HTTP2
+
+
+HTTP (Hypertext Transfer Protocol) is the protocol used to transfer data over the internet. It is the foundation of the World Wide Web, and without it, we wouldn't be able to view websites or access any online content. HTTP has been around for many years, and it has undergone several changes and improvements. The latest version of HTTP is HTTP2, which was released in 2015. In this blog post, we will discuss the differences between HTTP1.1 and HTTP2.
+
+Multiplexing:
+One of the most significant differences between HTTP1.1 and HTTP2 is multiplexing. HTTP1.1 only supports one request at a time. This means that a client must wait for a response from the server before sending another request. HTTP2, on the other hand, supports multiple requests at the same time. This is possible due to the introduction of multiplexing, which allows for multiple streams of data to be sent over a single connection.
+
+Binary Protocol:
+HTTP1.1 uses text-based protocols, which are human-readable but require more data to be transmitted. HTTP2, on the other hand, uses a binary protocol, which is more efficient in terms of data transmission. This means that HTTP2 requires less bandwidth to transmit the same amount of data as HTTP1.1.
+
+Header Compression:
+HTTP1.1 headers are not compressed, which means that they take up a significant amount of space in the data transmission. HTTP2 addresses this issue by introducing header compression. Header compression reduces the size of the headers, making data transmission more efficient.
+
+Server Push:
+Another major difference between HTTP1.1 and HTTP2 is server push. In HTTP1.1, a client must request all the resources it needs from the server. In contrast, HTTP2 allows the server to push resources to the client without the client having to request them explicitly. This improves the performance of web applications by reducing latency and the number of round trips between the client and the server.
+
+Stream Prioritization:
+HTTP2 also introduces stream prioritization, which allows the client to prioritize which resources are loaded first. This ensures that critical resources, such as CSS and JavaScript files, are loaded first, improving the user experience.
+
+In conclusion, HTTP2 is a significant improvement over HTTP1.1 in terms of performance and efficiency. It introduces several new features such as multiplexing, binary protocol, header compression, server push, and stream prioritization, which make web applications faster, more efficient, and more responsive. While HTTP1.1 is still widely used, it is clear that HTTP2 is the way forward for the future of the web.
+
+
+2. Write a blog about objects and its internal representation in Javascript
+
+In JavaScript, everything is an object. From simple values like numbers and strings to more complex data types like arrays and functions, everything is represented as an object. Objects in JavaScript are a key component of the language, and understanding how they are represented internally is crucial for writing efficient and effective code.
+
+Internal Representation of Objects in JavaScript:
+
+In JavaScript, objects are represented as key-value pairs. Each object has a set of properties that describe its state and behavior. These properties can be accessed and modified using dot notation or bracket notation.
+
+Objects in JavaScript are dynamically typed, which means that their properties can be added, removed, or modified at runtime. This makes JavaScript a very flexible language, but it also means that objects can have different internal representations depending on their current state.
+
+When an object is created in JavaScript, it is allocated a chunk of memory to store its properties. Each property is stored as a key-value pair, where the key is a string and the value can be any valid JavaScript value, including another object.
+
+In addition to its own properties, each object in JavaScript has a prototype chain. The prototype chain is a series of objects that are linked together in a chain-like structure. When a property is accessed on an object, JavaScript first checks if the property exists on the object itself. If the property does not exist on the object, JavaScript then checks the object's prototype. This process continues up the prototype chain until the property is found or the end of the chain is reached.
+
+This means that objects in JavaScript can inherit properties and behavior from their prototypes, which can lead to code reuse and improved performance.
+
+In modern JavaScript, objects can be created using a variety of syntaxes, including object literals, constructor functions, and the ES6 class syntax. Each syntax has its own advantages and disadvantages, but all result in objects that are represented internally in the same way.
+
+Benefits of Using Objects in JavaScript:
+
+Objects provide a flexible and powerful way to store and manipulate data in JavaScript.
+
+Objects can be used to model real-world concepts and relationships, making them a natural fit for many programming tasks.
+
+Objects in JavaScript are highly dynamic, allowing properties to be added, removed, or modified at runtime.
+
+The prototype chain allows for code reuse and improved performance by allowing objects to inherit properties and behavior from their prototypes.
+
+In conclusion, objects are a fundamental part of JavaScript, and understanding their internal representation is essential for writing efficient and effective code. By leveraging the power and flexibility of objects in JavaScript, developers can create dynamic and powerful applications that can model complex real-world concepts and relationships.
